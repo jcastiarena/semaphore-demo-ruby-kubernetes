@@ -19,6 +19,7 @@ blocks:
             - 'docker push "${ECR_REGISTRY}:${SEMAPHORE_WORKFLOW_ID}"'
       secrets:
         - name: AWS
+        - name: aws-k8s
       env_vars:
         - name: AWS_DEFAULT_REGION
           value: eu-west-1
